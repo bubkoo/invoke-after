@@ -48,7 +48,7 @@ describe('invoke-before: ', function () {
 
   it('exceptions', function () {
 
-    expect(function(){
+    expect(function () {
       invokeBefore(3, null);
     }).to.throw(Error);
 
