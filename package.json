@@ -1,6 +1,6 @@
 {
   "name": "invoke-after",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Returns a function that will only be executed after being called N times.",
   "main": "index.js",
   "directories": {
