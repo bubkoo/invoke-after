@@ -25,7 +25,7 @@ var invokeAfter = require('invoke-after');
 // invokeAfter(n, func);
 
 var c  = 0;
-var fn = invokeBefore(3, function () {
+var fn = invokeAfter(3, function () {
   return ++c;
 });
 
@@ -40,7 +40,7 @@ fn(); // => 3
 ## Related
 
 - [invoke-before](https://github.com/gearcase/invoke-before) - Returns a function that will only be executed before being called N times.
-- [invoke-once](https://github.com/gearcase/invoke-once) - Restrict the given function only be invoked once.
+- [invoke-once](https://github.com/gearcase/invoke-once) - Restrict the given function to only be invoked once.
 - [invoke-fn](https://github.com/gearcase/invoke-fn) - A faster alternative to `Function#apply`.
 - [try-invoke](https://github.com/gearcase/try-invoke) - Attempts to invoke the given function, returning either the result or the caught error object.
 - [is-native](https://github.com/gearcase/is-native) - Checks if the given value is a native function.
